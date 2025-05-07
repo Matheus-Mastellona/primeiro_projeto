@@ -1,4 +1,4 @@
-package main.java.com.mastelloni.projetoEstoque.service;
+package com.mastelloni.projetoEstoque.service;
 
 public class UsuarioService {
     

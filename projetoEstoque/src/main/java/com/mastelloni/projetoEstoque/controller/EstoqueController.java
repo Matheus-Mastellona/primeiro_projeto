@@ -1,4 +1,4 @@
-package main.java.com.mastelloni.projetoEstoque.controller;
+package com.mastelloni.projetoEstoque.controller;
 
 public class EstoqueController {
     
