@@ -27,7 +27,6 @@ public class Produto {
     private Fornecedor fornecedor;
 
     public Produto() {
-        // Construtor padrão exigido pelo JPA
     }
 
     public Produto(long id, String nome, String descricao, BigDecimal preco, Integer quantidade, Categoria categoria,
