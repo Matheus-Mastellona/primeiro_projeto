@@ -1,6 +1,9 @@
 package com.mastelloni.projetoEstoque.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -12,12 +15,18 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String nome, email, senha, papel;
+    private String nome, senha;
+
+    @Column(unique = true)
+    private String email;
+
+    @Enumerated(EnumType.STRING)
+    private Papel papel;
 
     public Usuario() {
     }
 
-    public Usuario(long id, String nome, String email, String senha, String papel) {
+    public Usuario(long id, String nome, String email, String senha, Papel papel) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -57,11 +66,11 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getPapel() {
+    public Papel getPapel() {
         return papel;
     }
 
-    public void setPapel(String papel) {
+    public void setPapel(Papel papel) {
         this.papel = papel;
     }
 

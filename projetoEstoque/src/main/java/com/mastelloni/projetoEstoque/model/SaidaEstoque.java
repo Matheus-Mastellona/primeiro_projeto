@@ -24,7 +24,6 @@ public class SaidaEstoque {
     private Usuario usuario;
 
     public SaidaEstoque() {
-        dataSaida = LocalDateTime.now();
     }
 
     public SaidaEstoque(long id, Integer quantidade, LocalDateTime dataSaida, Produto produto, Usuario usuario) {

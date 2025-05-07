@@ -24,7 +24,6 @@ public class EntradaEstoque {
     private Usuario usuario;
 
     public EntradaEstoque() {
-        dataEntrada = LocalDateTime.now();
     }
 
     public EntradaEstoque(long id, Integer quantidade, LocalDateTime dataEntrada, Produto produto, Usuario usuario) {
